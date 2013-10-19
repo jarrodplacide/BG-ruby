@@ -1,0 +1,27 @@
+<% provide(:title, 'Welcome to BuzzyGals') %>
+<% provide(:body_class, 'red_bg') %>
+<div id="single_column">
+
+  <%= render "header" %>
+
+  <div id="main" role="main">
+    <div id="content">
+        <div id="left-side" class="left">
+            <div id="logo">
+                <%= image_tag("logo-home.png", alt: "BuzzyGals Logo") %>
+            </div>
+        </div>
+
+        <div id="right-side" class="right">
+            <div id="login_option">
+
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+  </div>
+
+  <%= render "footer" %>
+
+</div>
