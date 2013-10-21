@@ -1,0 +1,56 @@
+<% provide(:title, @pagetitle) %>
+
+<div id="three_column">
+
+  <%= render 'shared/three_column_header' %>
+
+  <div id="main" role="main">
+
+    <div id="content" class="my_profile">
+
+      <div id="photo_container">
+
+        <div id="photo">
+            <%= image_tag("default-profile-pic.jpg", {alt: 'Profile Image - ', height: 250, width: 200}) %>
+        </div>
+
+        <div class="change_photo">
+
+        </div>
+
+        <div id="display_name">
+          <h2>Display Name</h2>
+        </div>
+
+        <div id="location">
+          <p>Location</p>
+        </div>
+
+      </div>
+
+      <div id="content_container">
+
+        <nav id="content_menu">
+            <ul>
+                <li>About</li>
+                <li>Stories</li>
+                <li>Townhalls</li>
+            </ul>
+          <div class="clearfix"></div>
+        </nav>
+
+        <div id="content_page">
+          <!-- Templates -->
+
+
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+    <%= render 'shared/three_column_sidebar_advertising' %>
+
+    <div class="clearfix"></div>
+  </div>
+
+</div>

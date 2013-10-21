@@ -1,0 +1,50 @@
+<header id="top-bar">
+  <div id="top-menu">
+    <div class="container">
+
+      <div id="link_home">
+        <%= link_to 'Home', profile_path %>
+      </div>
+
+      <div id="link_townhall">
+        <%= link_to image_tag('townhall-small.png'), profile_path %>
+      </div>
+
+      <div id="notification_stories">
+        <%= link_to image_tag('notification.png'), profile_path %>
+      </div>
+
+      <div id="page_title">
+        <h1><%= @pagetitle %></h1>
+      </div>
+
+      <div id="notification_msgs">
+        <%= link_to image_tag('mail-icon.png'), profile_path %>
+      </div>
+
+      <div id="user_search">
+        <form action="/user/search" method="get">
+          <input type="text" name="searchTerms" placeholder="Search Users" value="" />
+          <input type="submit" value="Search" name="submit"/>
+        </form>
+      </div>
+
+      <nav id="link_account">
+        <li>Account
+            <ul>
+                <li><%= link_to "Details", edit_profile_path %></li>
+                <li><%= link_to "Change Password", edit_user_password_path %></li>
+                <li><%= link_to "Log Out", destroy_user_session_path %></li>
+            </ul>
+        </li>
+      </nav>
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</header>
+
+<div id="page_logo">
+  <%= image_tag('logo.png', {alt: 'BuzzyGals Logo', width: 218, height: 142}) %>
+</div>
+

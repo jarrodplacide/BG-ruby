@@ -1,5 +1,17 @@
 Buzzygals::Application.routes.draw do
-  get "pages/home"
+  get "profiles/show"
+  get "profiles/edit"
+  devise_for :users
+  #root 'pages#home'
+
+  # Set Root through Devise Scope
+  devise_scope :user do
+    root 'devise/sessions#new'
+  end
+
+  match '/signup', to: 'pages#signup', via: 'get'
+
+  resources :profiles
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

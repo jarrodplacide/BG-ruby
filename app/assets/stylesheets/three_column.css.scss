@@ -1,0 +1,166 @@
+@import "utilities/appvariables";
+
+#top-bar {
+  height: 42px;
+  background: $buzzylightred asset-url("menu-gradient.jpg") repeat-x;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+
+  #top-menu {
+    width: 868px;
+    margin: 0 auto;
+    background: none;
+    z-index: 100;
+
+    .container > div {
+      float: left;
+    }
+
+    #link_home {
+      padding: 12px 35px 0 0;
+      font-size: 13px;
+      color: #000000;
+    }
+
+    #link_townhall {
+      width: 30px;
+      padding: 4px 0 0;
+    }
+
+    #notification_stories {
+      width: 31px;
+      height: 31px;
+      padding: 5px 0 0 35px;
+    }
+
+    #page_title {
+      padding: 10px 0 0 141px;
+      width: 215px;
+
+      h1 {
+        font-size: 18px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+    }
+
+    #notification_msgs {
+      width: 45px;
+      padding: 10px 16px 0 0;
+    }
+
+    #link_account {
+      width: 70px;
+      float: right;
+      text-align: center;
+      font-size: 13px;
+      padding: 14px 5px 0 0;
+      color: #000000;
+      list-style: none;
+
+      ul {
+        display: none;
+        position: relative;
+        top: 10px;
+        background: $buzzylightred;
+        border-left: 1px solid $buzzyred;
+        border-right: 1px solid $buzzyred;
+        border-bottom: 1px solid $buzzyred;
+
+        li {
+          height: auto;
+          padding: 5px;
+
+          &:hover {
+            background: #FFFFFF;
+          }
+        }
+
+      }
+
+    }
+
+    #link_account > li:hover > ul {
+      display: block;
+    }
+
+    #notification_msgs {
+
+      a {
+        text-decoration: none;
+        width: 19px;
+        padding: 0;
+        margin: 0;
+      }
+
+      #message_counter {
+        width: 11px;
+        padding: 2px 7px 0 8px;
+        background: transparent asset-url('mail-notification-bg.png') no-repeat 0 0;
+        font-size: 11px;
+        color: #FFFFFF;
+      }
+
+    }
+  }
+
+  #user_search {
+    width: 210px;
+    height: 23px;
+    background: #FFFFFF asset-url('search-icon.png') no-repeat center right;
+    margin: 10px 0 0;
+
+    input[type="text"] {
+      border: none;
+      background: none;
+      width: 150px;
+      padding: 2px 5px 0;
+      font-family: "LucidaSansRegular";
+      font-size: 12px;
+    }
+
+    input[type="submit"] {
+      position: relative;
+      left: -9999px;
+    }
+  }
+
+
+}
+
+#page_logo {
+  width: 100;
+  text-align: center;
+  margin: 62px auto 20px;
+
+  img {
+    width: 218px;
+  }
+
+}
+
+
+#three_column #main {
+  width: 868px;
+  margin: 0 auto;
+
+  #content {
+    width: 708px;
+    float: left;
+    border-right: 1px solid #CCCCCC;
+    margin: 0 0 50px;
+  }
+
+  #side_advertising {
+    width: 150px;
+    float: right;
+
+    div.ad {
+      margin: 0 0 20px;
+    }
+
+  }
+}

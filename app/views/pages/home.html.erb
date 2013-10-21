@@ -2,19 +2,19 @@
 <% provide(:body_class, 'red_bg') %>
 <div id="single_column">
 
-  <%= render "header" %>
+  <%= render 'shared/single_column_header' %>
 
   <div id="main" role="main">
     <div id="content">
         <div id="left-side" class="left">
             <div id="logo">
-                <%= image_tag("logo-home.png", alt: "BuzzyGals Logo") %>
+                <%= image_tag('logo-home.png', alt: 'BuzzyGals Logo') %>
             </div>
         </div>
 
         <div id="right-side" class="right">
             <div id="login_option">
-
+                <p>Don't have an account? <%= link_to 'Click here to Sign Up', signup_path %></p>
             </div>
         </div>
 
@@ -22,6 +22,6 @@
     </div>
   </div>
 
-  <%= render "footer" %>
+  <%= render 'shared/single_column_footer' %>
 
 </div>
