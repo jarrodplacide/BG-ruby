@@ -4,4 +4,8 @@ class PagesController < ApplicationController
 
   def signup
   end
+
+  def register_email_notification
+
+  end
 end

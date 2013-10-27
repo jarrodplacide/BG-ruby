@@ -3,15 +3,15 @@
     <div class="container">
 
       <div id="link_home">
-        <%= link_to 'Home', profile_path %>
+        <%= link_to 'Home', own_profile_path %>
       </div>
 
       <div id="link_townhall">
-        <%= link_to image_tag('townhall-small.png'), profile_path %>
+        <%= link_to image_tag('townhall-small.png'), own_profile_path %>
       </div>
 
       <div id="notification_stories">
-        <%= link_to image_tag('notification.png'), profile_path %>
+        <%= link_to image_tag('notification.png'), own_profile_path %>
       </div>
 
       <div id="page_title">
@@ -19,7 +19,7 @@
       </div>
 
       <div id="notification_msgs">
-        <%= link_to image_tag('mail-icon.png'), profile_path %>
+        <%= link_to image_tag('mail-icon.png'), own_profile_path %>
       </div>
 
       <div id="user_search">
@@ -32,9 +32,9 @@
       <nav id="link_account">
         <li>Account
             <ul>
-                <li><%= link_to "Details", edit_profile_path %></li>
-                <li><%= link_to "Change Password", edit_user_password_path %></li>
-                <li><%= link_to "Log Out", destroy_user_session_path %></li>
+                <li><%= link_to "Details", own_profile_edit_path %></li>
+                <li><%= link_to "Change Password", edit_user_registration_path %></li>
+                <li><%= link_to "Log Out", destroy_user_session_path, method: "delete" %></li>
             </ul>
         </li>
       </nav>

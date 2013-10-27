@@ -9,7 +9,7 @@ class ProfilesController < ApplicationController
     @profile = current_user.build_profile(profile_params)
     if @profile.save
         flash[:success] = 'You have successfully completed your registration. Welcome to BuzzyGals'
-        redirect_to profile_path
+        redirect_to own_profile_path
     else
         render 'new'
     end

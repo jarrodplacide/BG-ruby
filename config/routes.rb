@@ -1,7 +1,6 @@
 Buzzygals::Application.routes.draw do
-  get "profiles/show"
-  get "profiles/edit"
-  devise_for :users
+  #Register Devise; Register Inherited Controllers for Devise
+  devise_for :users, :controllers => { :registrations => "registrations" }
   #root 'pages#home'
 
   # Set Root through Devise Scope
@@ -10,6 +9,11 @@ Buzzygals::Application.routes.draw do
   end
 
   match '/signup', to: 'pages#signup', via: 'get'
+
+  get '/profile', to: 'profiles#show', as: :own_profile
+  get '/profile/edit', to: 'profiles#edit', as: :own_profile_edit
+
+  get '/registration-notification', to: 'pages#register_email_notification', as: :register_email_notification
 
   resources :profiles
   # The priority is based upon order of creation: first created -> highest priority.

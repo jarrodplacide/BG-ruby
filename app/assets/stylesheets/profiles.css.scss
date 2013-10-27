@@ -69,3 +69,22 @@
 }
 
 //Profile Registration Form Particulars
+
+#new_profile {
+
+  select#profile_gender {
+    display: inline-block;
+    margin: 0 0 10px 10px;
+  }
+
+  select#profile_dob_1i {
+    display: inline-block;
+    margin: 0 0 10px 10px;
+  }
+
+  textarea#profile_about {
+    margin: 0 0 10px;
+    height: 200px;
+  }
+
+}

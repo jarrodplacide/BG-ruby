@@ -13,6 +13,7 @@
       </div>
 
       <div id="right-side" class="right">
+        <p class="notice">Fill in your profile information & complete your registration.</p>
         <div id="login_option">
           <% flash.each do |key, value| %>
               <p class="login_error"><%= value %></p>
@@ -31,6 +32,7 @@
               </div>
 
               <div>
+                <%= f.label :gender, "Gender" %>
                 <%= f.select :gender, options_for_select([ ['Male', 'male'], ['Female', 'female'] ], 'male') %>
               </div>
 

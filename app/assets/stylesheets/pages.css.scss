@@ -30,6 +30,20 @@
         text-align: left;
         padding: 100px 0 0;
 
+        .notice, .login_error, .devise_error {
+          font-size: 14px;
+          background: $buzzyred;
+          color: #FFFFFF;
+          border: 1px solid #bfbfbf;
+          display: block;
+          margin: 0 0 10px 20px;
+          padding: 7px 10px;
+          width: 278px;
+          text-align: center;
+          border-radius: 5px;
+          -moz-border-radius: 5px;
+        }
+
         #login_option {
           margin: 0 0 0 20px;
           text-align: left;
@@ -37,7 +51,7 @@
           p {
             font-size: 12px;
             color: $buzzyred;
-            margin: 0;
+            margin: 0 0 10px;
             vertical-align: bottom;
             display: inline-block;
 
@@ -45,14 +59,12 @@
               font-size: 14px;
               background: #D2D2D2;
               color: #3a3a3a;
-              border: 1px solid #bfbfbf;
-              display: block;
-              margin: 0 0 10px;
-              padding: 7px 0;
-              width: 298px;
-              text-align: center;
-              border-radius: 5px;
-              -moz-border-radius: 5px;
+            }
+
+            &.devise_error {
+              font-size: 14px;
+              background: #D2D2D2;
+              color: #3a3a3a;
             }
           }
 
@@ -69,7 +81,7 @@
             margin: 0 0 8px;
           }
 
-          input[type="text"], input[type="email"], input[type="password"]{
+          input[type="text"], input[type="email"], input[type="password"], textarea {
             border-radius: 10px;
             -moz-border-radius: 10px;
             border: 1px solid #D8D8D8;

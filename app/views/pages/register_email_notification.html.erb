@@ -1,0 +1,30 @@
+<% provide(:title, 'Registration Confirmation') %>
+<% provide(:body_class, 'red_bg') %>
+<div id="single_column">
+
+  <%= render 'shared/single_column_header' %>
+
+  <div id="main" role="main">
+    <div id="content">
+      <div id="left-side" class="left">
+        <div id="logo">
+          <%= image_tag('logo-home.png', alt: 'BuzzyGals Logo') %>
+        </div>
+      </div>
+
+      <div id="right-side" class="right">
+        <div id="notification">
+          <p class="notice">
+            Thank you for registering with BuzzyGals. You have been sent an e-mail containing a link to verify your account.
+            You must verify your account before you are able to continue.
+          </p>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+
+  <%= render 'shared/single_column_footer' %>
+
+</div>
